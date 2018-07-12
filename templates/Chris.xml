@@ -9,11 +9,45 @@
       <option name="CSS" value="true" />
     </context>
   </template>
-  <template name="tsx" value="import * as React from 'react'&#10;&#10;&#10;class $NAME$ extends React.Component&lt;React.SFC&lt;{}&gt;&gt; {&#10;  render (): JSX.Element {&#10;    return (&#10;      $JSX$&#10;    )&#10;  } &#10;}&#10;&#10;export default $NAME$&#10;" description="New React component" toReformat="false" toShortenFQNames="true">
+  <template name="tsx" value="import * as React from 'react'&#10;&#10;&#10;class $NAME$ extends React.Component&lt;React.SFC&lt;{}&gt;&gt; {&#10;  public render (): JSX.Element {&#10;    return (&#10;      $JSX$&#10;    )&#10;  } &#10;}&#10;&#10;export default $NAME$&#10;" description="New React component" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="JSX" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="model" value="class $NAME$ {&#10;  &#10;}&#10;&#10;export default $NAME$&#10;" description="New model class" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="get" value="public get $VAR$ (): $TYPE$ {&#10;  return this._$VAR$&#10;}&#10;" description="New get method" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="set" value="public set $VAR$ ($VAR$: $TYPE$) {&#10;  this._$VAR$ = $VAR$&#10;}&#10;" description="New set method" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="sg" value="public set $VAR$ ($VAR$: $TYPE$) {&#10;  this._$VAR$ = $VAR$&#10;}&#10;public get $VAR$ (): $TYPE$ {&#10;  return this._$VAR$&#10;}&#10;" description="A setter and getter method back to back" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="mem" value="private _$VAR$: $TYPE$&#10;" description="New private member" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>
