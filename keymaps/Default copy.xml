@@ -2,11 +2,16 @@
   <action id="FileChooser.NewFolder" />
   <action id="GotoChangedFile" />
   <action id="GotoClass" />
+  <action id="GotoLine" />
   <action id="Inline" />
   <action id="NewDir">
     <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
   <action id="NewFile">
     <keyboard-shortcut first-keystroke="ctrl alt n" />
+  </action>
+  <action id="SelectNextOccurrence">
+    <keyboard-shortcut first-keystroke="alt j" />
+    <keyboard-shortcut first-keystroke="ctrl g" />
   </action>
 </keymap>
