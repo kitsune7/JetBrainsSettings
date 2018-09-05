@@ -3,9 +3,17 @@
     <property name="created">2018-08-24T23:04:03</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.3.4.0.0</property>
-    <property name="modified">2018-08-24T23:08:34</property>
+    <property name="modified">2018-09-04T21:22:35</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
+  <colors>
+    <option name="FILESTATUS_COPIED" value="629755" />
+    <option name="FILESTATUS_HIJACKED" value="ffcb6b" />
+    <option name="FILESTATUS_OBSOLETE" value="ffcb6b" />
+    <option name="FILESTATUS_RENAMED" value="3a8484" />
+    <option name="FILESTATUS_SUPPRESSED" value="546e7a" />
+    <option name="FILESTATUS_SWITCHED" value="f77669" />
+  </colors>
   <attributes>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value />
