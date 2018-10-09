@@ -75,4 +75,15 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="cc" value="import React, { Component } from 'react'&#10;import PropTypes from 'prop-types'&#10;&#10;import styles from './style'&#10;&#10;class $NAME$ extends Component {&#10;  static propTypes = {&#10;    &#10;  }&#10;&#10;  render () {&#10;    return (&#10;      &#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$" description="Common component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnstyle" value="import { StyleSheet } from 'react-native'&#10;//import {  } from '../colors'&#10;&#10;const styles = StyleSheet.create({&#10;  &#10;})&#10;&#10;export default styles&#10;" description="React native stylesheet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
