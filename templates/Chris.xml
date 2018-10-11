@@ -62,8 +62,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="css" value="import './$NAME$View.css'" description="import css file" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="css" value="import './style.css'" description="import css file" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="TypeScript" value="true" />
     </context>
@@ -95,6 +94,13 @@
   <template name="ex" value="export { default as $NAME$ } from './$NAME$'&#10;" description="Export default from" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="var" value="var(--$1$);" description="css variable use" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
