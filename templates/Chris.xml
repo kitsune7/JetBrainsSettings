@@ -9,7 +9,7 @@
       <option name="CSS" value="true" />
     </context>
   </template>
-  <template name="tsx" value="import * as React from 'react'&#10;import $NAME$View from './$NAME$View'&#10;import Model from '../../Model/Model'&#10;import IObserver from '../IObserver'&#10;&#10;&#10;class $NAME$Presenter extends React.Component&lt;React.SFC&lt;{}&gt;&gt; implements IObserver {&#10;  state = {}&#10;&#10;  public constructor(props) {&#10;    super(props)&#10;    Model.get_instance().addObserver(this)&#10;  }&#10;  &#10;  componentWillUnmount () {&#10;    Model.get_instance().removeObserver(this)&#10;  }&#10;&#10;  public update(): void {&#10;    this.setState({})&#10;  }&#10;  &#10;  public render (): JSX.Element {&#10;    return (&#10;      &lt;$NAME$View /&gt;&#10;    )&#10;  } &#10;}&#10;&#10;export default $NAME$Presenter&#10;" description="New presenter" toReformat="false" toShortenFQNames="true">
+  <template name="tsc" value="import React, { Component } from 'react'&#10;import PropTypes from 'prop-types'&#10;import './style.css'&#10;&#10;class $NAME$ extends Component {&#10;  static propTypes = {&#10;    style: PropTypes.object&#10;  }&#10;&#10;  render () {&#10;    return (&#10;      &#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$" description="New typescript component" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
