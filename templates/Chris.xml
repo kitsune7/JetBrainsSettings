@@ -150,4 +150,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="gs" value="get $VAR$ () {&#10;  return this.$VAR$&#10;}&#10;set $VAR$ (newValue) {&#10;  this.$VAR$ = newValue&#10;}" description="Getter setter" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
