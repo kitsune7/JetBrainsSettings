@@ -1,0 +1,10 @@
+<templateSet group="user">
+  <template name="tamper" value="// ==UserScript==&#10;// @name         $NAME$&#10;// @namespace    http://tampermonkey.net/&#10;// @version      0.1&#10;// @description  $DESCRIPTION$&#10;// @author       Christopher Bradshaw&#10;// @match        $URL$&#10;// @grant        none&#10;// ==/UserScript==&#10;&#10;(function () {&#10;  'use strict'&#10;&#10;  /* ------------------------------ Main code ------------------------------ */&#10;})()&#10;" description="New tampermonkey script" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
