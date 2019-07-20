@@ -56,7 +56,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="for" value="for (let i: number = 0; i &lt; $SOMETHING$.length; ++i) {&#10;  &#10;}" description="Typescript for loop" toReformat="false" toShortenFQNames="true">
+  <template name="for" value="for (let i = 0; i &lt; $SOMETHING$.length; ++i) {&#10;  &#10;}" description="Typescript for loop" toReformat="false" toShortenFQNames="true">
     <variable name="SOMETHING" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
