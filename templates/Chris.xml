@@ -161,9 +161,9 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ve" value="const { $VAR$ } = this.$PROPS_OR_STATE$" description="Variable expansion" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ve" value="const { $VARS$ } = this.$PROPS_OR_STATE$" description="Variable expansion" toReformat="false" toShortenFQNames="true">
     <variable name="PROPS_OR_STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -186,6 +186,12 @@
   <template name="redu" value="reduce((previousValue, $NAME$) =&gt; {&#10;  return $SOMETHING$&#10;})&#10;" description="New reduce function" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SOMETHING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imd" value="import $COMPONENT$ from './$COMPONENT$'" description="import default export component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
