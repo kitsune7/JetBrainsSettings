@@ -162,8 +162,8 @@
     </context>
   </template>
   <template name="ve" value="const { $VARS$ } = $OBJECT$" description="Variable expansion" toReformat="false" toShortenFQNames="true">
-    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="this.props" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -197,6 +197,11 @@
     </context>
   </template>
   <template name="onc" value="onClick = (event: React.MouseEvent): void =&gt; {&#10;  event.preventDefault()&#10;  const target = event.target as HTMLElement&#10;}" description="onclick handler" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tp" value="type Props = {&#10;  &#10;}" description="type Props definition" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
