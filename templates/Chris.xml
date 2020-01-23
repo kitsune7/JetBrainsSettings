@@ -206,4 +206,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="post" value="router.post(&#10;  '/api/$ROUTE$',&#10;  async (req: express.Request, res: express.Response) =&gt; {&#10;    const token: string = getAuthToken(req)&#10;    if (token) {&#10;      res.json(await apiRouteHandler.$ROUTE$(token))&#10;    } else {&#10;      const errorCode = 1003&#10;      res.json({&#10;        code: errorCode,&#10;        error: errorCodes[errorCode]&#10;      })&#10;    }&#10;  }&#10;)" description="New post route" toReformat="false" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
