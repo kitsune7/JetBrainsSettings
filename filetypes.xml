@@ -8,8 +8,8 @@
       <mapping ext="key" type="PLAIN_TEXT" />
       <mapping ext="ljs" type="PLAIN_TEXT" />
       <mapping ext="config" type="PLAIN_TEXT" />
-      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="ClientCommunicator" type="TypeScript JSX" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping pattern=".parcel-plugin-textrc" approved="true" type="PLAIN_TEXT" />
