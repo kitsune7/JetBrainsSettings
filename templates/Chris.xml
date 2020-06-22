@@ -179,7 +179,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="imd" value="import $COMPONENT$ from './$COMPONENT$'" description="import default export component" toReformat="false" toShortenFQNames="true">
+  <template name="im" value="import $COMPONENT$ from './$COMPONENT$'" description="import default export component" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -220,6 +220,12 @@
   </template>
   <template name="construct" value="constructor() {&#10;  super()&#10;&#10;  this.$FUNCTION$ = () =&gt; {}&#10;}" description="New constructor" toReformat="false" toShortenFQNames="true">
     <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="// @ts-nocheck&#10;import React from 'react'&#10;import { fireEvent, render } from '@testing-library/react'&#10;import $FILE$ from './$FILE$'&#10;&#10;test('', () =&gt; {})&#10;" description="New test file" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
