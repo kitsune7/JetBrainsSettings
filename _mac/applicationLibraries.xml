@@ -1,0 +1,48 @@
+<application>
+  <component name="libraryTable">
+    <library name="common" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_db-cheppie.github.io_assets_css_common.css" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_db-cheppie.github.io_assets_css_common.css" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="ionicons" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_ionicons@5.0.0_dist_ionicons_ionicons.esm.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_ionicons@5.0.0_dist_ionicons_ionicons.esm.js" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="reset" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_gh_db-cheppie_assets@latest_css_reset.css" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_gh_db-cheppie_assets@latest_css_reset.css" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="theme" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_db-cheppie.github.io_assets_css_theme.css" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_db-cheppie.github.io_assets_css_theme.css" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+  </component>
+</application>
