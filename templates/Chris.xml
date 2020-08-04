@@ -224,7 +224,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="test" value="import React from 'react'&#10;import { render } from '@testing-library/react'&#10;import $COMPONENT$ from './$COMPONENT$'&#10;&#10;test('', () =&gt; {&#10;  const { container } = render(&lt;$COMPONENT$ /&gt;)&#10;  expect(container).toBe(true)&#10;})&#10;" description="New test file" toReformat="false" toShortenFQNames="true">
+  <template name="test" value="import React from 'react'&#10;import { render } from '@testing-library/react'&#10;import $COMPONENT$ from './$COMPONENT$'&#10;&#10;function getContainer(): HTMLElement {&#10;  return render(&lt;$COMPONENT$ /&gt;).container&#10;}&#10;&#10;test('', () =&gt; {&#10;  const container = getContainer()&#10;  expect(container).toBe(true)&#10;})&#10;" description="New test file" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -232,6 +232,12 @@
   </template>
   <template name="imcommon" value="import { $VAR$ } from 'common'" description="import from common" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="nt" value="test('$DESCRIPTION$', () =&gt; {&#10;  const container = getContainer()&#10;  expect(container).toBe(true)&#10;})" description="New test function" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
