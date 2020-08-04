@@ -60,7 +60,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="inter" value="interface $NAME$ {&#10;    $PROPERTIES$&#10;}&#10;&#10;export default $NAME$&#10;" description="interface" toReformat="false" toShortenFQNames="true">
+  <template name="intf" value="interface $NAME$ {&#10;    $PROPERTIES$&#10;}&#10;&#10;export default $NAME$&#10;" description="New interface file" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PROPERTIES" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
