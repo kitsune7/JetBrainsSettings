@@ -241,7 +241,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="jsc" value="import React, { Component } from 'react'&#10;import './style.css'&#10;&#10;class $NAME$ extends Component {&#10;  render () {&#10;    return (&#10;      &lt;div&gt;&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$&#10;" description="New React Component (JSX)" toReformat="false" toShortenFQNames="true">
+  <template name="jsc" value="import React, { Component } from 'react'&#10;import DesignView from '../DesignView'&#10;import './style.css'&#10;&#10;class $NAME$ extends Component {&#10;  render () {&#10;    return (&#10;      &lt;DesignView&gt;&#10;        &lt;div&gt;&lt;/div&gt;&#10;      &lt;/DesignView&gt;&#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$&#10;" description="New React Component (JSX)" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="false" />
