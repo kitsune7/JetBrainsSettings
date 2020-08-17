@@ -241,4 +241,25 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="jsc" value="import React, { Component } from 'react'&#10;import './style.css'&#10;&#10;class $NAME$ extends Component {&#10;  render () {&#10;    return (&#10;      &lt;div&gt;&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$&#10;" description="New React Component (JSX)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
 </templateSet>
