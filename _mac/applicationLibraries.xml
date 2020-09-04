@@ -1,5 +1,21 @@
 <application>
   <component name="libraryTable">
+    <library name="balancetext" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="ExtJS 3" />
+        <option name="frameworkVersion" value="3.3.0" />
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__cdnjs.cloudflare.com_ajax_libs_balance-text_3.3.0_balancetext.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__cdnjs.cloudflare.com_ajax_libs_balance-text_3.3.0_balancetext.js" />
+      </CLASSES>
+      <DOCUMENTATION>
+        <root url="http://dev.sencha.com/deploy/dev/docs" />
+      </DOCUMENTATION>
+      <SOURCES />
+    </library>
     <library name="common" type="javaScript">
       <properties>
         <sourceFilesUrls>
