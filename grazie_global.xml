@@ -5,6 +5,7 @@
         <option value="PASSIVE_VOICE" />
         <option value="COMMA_BEFORE_AND" />
         <option value="WHETHER" />
+        <option value="COMMA_COMPOUND_SENTENCE" />
       </set>
     </option>
   </component>
