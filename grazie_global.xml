@@ -1,0 +1,11 @@
+<application>
+  <component name="GraziConfig">
+    <option name="userDisabledRules">
+      <set>
+        <option value="PASSIVE_VOICE" />
+        <option value="COMMA_BEFORE_AND" />
+        <option value="WHETHER" />
+      </set>
+    </option>
+  </component>
+</application>
