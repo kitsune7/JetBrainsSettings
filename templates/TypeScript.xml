@@ -1,0 +1,35 @@
+<templateSet group="TypeScript">
+  <template name="inter" value="interface $NAME$ {&#10;  $END$&#10;}&#10;&#10;export default $NAME$&#10;" description="New interface file" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tsc" value="import React, { Component, ReactElement } from 'react'&#10;import './style.css'&#10;&#10;class $NAME$ extends Component {&#10;  render (): ReactElement {&#10;    return (&#10;      &lt;div&gt;&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$&#10;" description="New typescript component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ts-" value="// @ts-ignore" description="ts-ignore" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="click" value="(event: React.MouseEvent): void =&gt; {&#10;  event.preventDefault()&#10;  const target = event.target as HTMLElement&#10;  $END$&#10;}" description="onClick handler" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="change" value="(event: React.ChangeEvent): void =&gt; {&#10;  const target = event.target as HTMLInputElement&#10;}" description="Change event function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fc" value="import React, { ReactElement } from 'react'&#10;import './styles.css'&#10;&#10;type Props = {}&#10;&#10;const $NAME$ = (props: Props): ReactElement =&gt; (&#10;  $END$&#10;)&#10;&#10;export default $NAME$&#10;" description="Functional Component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

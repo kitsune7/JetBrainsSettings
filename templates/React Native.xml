@@ -1,0 +1,8 @@
+<templateSet group="React Native">
+  <template name="rnc" value="import React, { Component } from 'react'&#10;import PropTypes from 'prop-types'&#10;import styles from './style'&#10;&#10;class $NAME$ extends Component {&#10;  static propTypes = {&#10;    style: PropTypes.object&#10;  }&#10;  &#10;  static defaultProps = {&#10;    style: {}&#10;  }&#10;  &#10;  render () {&#10;    return (&#10;      $END$&#10;    )&#10;  }&#10;}&#10;&#10;export default $NAME$&#10;" description="React native component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

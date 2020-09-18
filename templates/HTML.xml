@@ -1,0 +1,7 @@
+<templateSet group="HTML">
+  <template name="html" value="&lt;!doctype html&gt;&#10;&lt;html&gt;&#10;&lt;head lang=&quot;en&quot;&gt;&#10;    &lt;meta charset=&quot;utf-8&quot; /&gt;&#10;    &lt;title&gt;&lt;/title&gt;&#10;    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    &#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="New html5 document" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
