@@ -6,6 +6,7 @@
       <mapping pattern=".browserlistrc" type="PLAIN_TEXT" />
       <mapping pattern=".browserslistrc" type="PLAIN_TEXT" />
       <mapping pattern=".bash_settings" type="PLAIN_TEXT" />
+      <mapping ext="curaprofile" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
